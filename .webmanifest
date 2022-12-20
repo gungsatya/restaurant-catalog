@@ -1,0 +1,38 @@
+{
+    "id": "restaurant-catalog-pwa-1",
+    "name": "Restaurant Catalog",
+    "short_name": "Resto Catalog",
+    "theme_color": "#FF5722",
+    "background_color": "#FFC107",
+    "start_url": "index.html?launcher=true",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/icons/favicon.ico",
+            "type": "image/x-icon",
+            "sizes": "16x16 32x32"
+        },
+        {
+            "src": "/icons/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/icons/icon-192-maskable.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icons/icon-512-maskable.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ]
+}
