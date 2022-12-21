@@ -320,7 +320,7 @@ section#restaurants .card-deck {
   font-style: italic;
 }
 
-.restaurant-bottom-detail button {
+.restaurant-bottom-detail #favorite {
   display: inline-block;
   color: #e1e1e1;
   transition: 0.3s;
@@ -331,7 +331,11 @@ section#restaurants .card-deck {
   margin-left: 5px;
 }
 
-.restaurant-bottom-detail button:hover {
+.restaurant-bottom-detail #favorite:hover {
+  color: #fbb72c;
+}
+
+.restaurant-bottom-detail #favorite.active {
   color: #fbb72c;
 }
 

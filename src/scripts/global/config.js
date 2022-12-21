@@ -6,7 +6,10 @@ const IMAGE_SIZE = {
 
 const CONFIG = {
   BASE_URL: 'https://restaurant-api.dicoding.dev',
-  DEFAULT_IMAGE_SIZE: IMAGE_SIZE.SMALL
+  DEFAULT_IMAGE_SIZE: IMAGE_SIZE.SMALL,
+  DATABASE_NAME: 'restaurant-catalog',
+  DATABASE_VERSION: 1,
+  OBJECT_STORE_NAME: 'favorites'
 }
 
 export default CONFIG

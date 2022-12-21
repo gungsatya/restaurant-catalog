@@ -28,10 +28,6 @@ export default class RestaurantElm extends HTMLElement {
                 <span class="restaurant-city">${this.city}</span>
                 <h4><a href="/#/detail/${this.id}">${this.name}</a></h4>
                 <p>${this.description}</p>
-                <div class="restaurant-bottom-detail">
-                  <div></div>
-                  <div><button><i class="fa fa-heart"></i></button></div>
-                </div>
             </div>
         </div>
     `
