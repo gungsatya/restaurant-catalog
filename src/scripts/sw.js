@@ -1,7 +1,7 @@
 import CacheHelper from './utils/cache-helper'
 
-// const version = '1.0.0'
-const CACHE_NAME = new Date().toISOString() // `resto-catalog-${version}`
+const version = '1.0.0'
+const CACHE_NAME = `resto-catalog-${version}`
 const assetsToCache = [
   './',
   './icons/apple-touch-icon.png',
@@ -20,19 +20,15 @@ const assetsToCache = [
 ]
 
 self.addEventListener('install', (event) => {
-  console.log('Installing Service Worker ...')
   self.skipWaiting()
   event.waitUntil(CacheHelper.cachingAppShell([...assetsToCache]))
 })
 
 self.addEventListener('activate', (event) => {
-  console.log('Activating Service Worker ...')
-
   event.waitUntil(CacheHelper.deleteOldCache())
 })
 
 self.addEventListener('fetch', (event) => {
-  console.log(event.request)
   event.respondWith(CacheHelper.revalidateCache(event.request))
 })
 

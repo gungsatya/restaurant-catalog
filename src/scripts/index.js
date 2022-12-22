@@ -10,7 +10,8 @@ console.log('Hello Coders!')
 const app = new App({
   button: document.getElementById('menu-toggle'),
   drawer: document.getElementById('menu'),
-  content: document.getElementById('maincontent')
+  content: document.getElementById('maincontent'),
+  loadingIndicator: document.getElementById('loading')
 })
 
 window.addEventListener('hashchange', () => {

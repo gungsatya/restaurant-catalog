@@ -3,7 +3,7 @@ import { CACHE_NAME } from '../sw'
 const CacheHelper = {
   async cachingAppShell(requests) {
     const cache = await this._openCache()
-    cache.addAll(requests)
+    await cache.addAll(requests)
   },
 
   async deleteOldCache() {
