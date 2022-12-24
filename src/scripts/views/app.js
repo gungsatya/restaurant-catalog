@@ -27,8 +27,16 @@ export default class App {
     const page = routes[url]
     this._loadingIndicator.style.display = 'flex'
     this._content.innerHTML = await page.render()
+
     await page.afterRender().finally(() => {
       this._loadingIndicator.style.display = 'none'
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+
+    const skipLinkElem = document.querySelector('.skip-link')
+    skipLinkElem.addEventListener('click', (event) => {
+      event.preventDefault()
+      document.querySelector('#maincontent').focus()
     })
   }
 }

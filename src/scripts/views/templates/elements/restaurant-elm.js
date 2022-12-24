@@ -22,7 +22,7 @@ export default class RestaurantElm extends HTMLElement {
     <div class="restaurant-card">
             <div class="badge">Rating ${this.rating}</div>
             <div class="restaurant-tumb">
-                <img src="${imageEndPoint}">
+                <img src="${imageEndPoint}" alt="${this.name} Restaurant Picture">
             </div>
             <div class="restaurant-details">
                 <span class="restaurant-city">${this.city}</span>

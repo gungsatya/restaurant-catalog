@@ -46,7 +46,7 @@ const createRestaurantDetail = (restaurant = {}) => {
   <div class="restaurant-card">
       <div class="badge">Rating ${restaurant.rating}</div>
       <div class="restaurant-tumb">
-          <img src="${imageEndPoint}">
+          <img src="${imageEndPoint}" alt="${restaurant.name} Restaurant Picture">
       </div>
       <div class="restaurant-details">
           <span class="restaurant-city">${restaurant.city}</span>
